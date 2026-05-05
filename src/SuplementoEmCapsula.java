@@ -4,7 +4,7 @@ public class SuplementoEmCapsula extends Suplemento {
     private int quantidadeDeCapsulas;
 
     public SuplementoEmCapsula(String nome, String marca, int quantidadeDeCapsulas) {
-        super(nome, marca, 0, 0);
+        super(nome, marca);
 
         this.quantidadeDeCapsulas = quantidadeDeCapsulas;
     }

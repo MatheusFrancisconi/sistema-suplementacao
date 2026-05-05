@@ -3,14 +3,15 @@ public class Main {
         System.out.println("--- TESTANDO O SISTEMA DE SUPLEMENTOS ---\n");
 
         // Criando o suplemento em pó
-        Suplemento meuWhey = new Suplemento("Whey 80", "Black Skull", 900, 30);
-        System.out.println("Marca do Whey: " + meuWhey.getMarca() + "\n");
+        SuplementoEmPo meuWhey = new SuplementoEmPo("Whey 80%", "Black Skull", 900, 30);
+        System.out.println("Nome do Whey: " + meuWhey.getNome() + " | Marca: " + meuWhey.getMarca());
+        meuWhey.consumir();
+        System.out.println("--------------------------------------------------");
 
         SuplementoEmCapsula minhaCreatina = new SuplementoEmCapsula("Creatina Creapure", "Growth Supplements", 120);
 
-        System.out.println("Marca da Creatina: " + minhaCreatina.getMarca() + "\n");
-
-        meuWhey.consumir();
+        System.out.println("Nome da Creatina: " + minhaCreatina.getNome() + " | Marca: " + minhaCreatina.getMarca());
         minhaCreatina.consumir();
+
     }
 }
