@@ -24,4 +24,9 @@ public abstract class Suplemento {
 
     // Método abstrato!
     public abstract void consumir();
+
+    // metodo para alteração de marca
+    public void setMarca(String novaMarca) {
+        this.marca = novaMarca;
+    }
 }

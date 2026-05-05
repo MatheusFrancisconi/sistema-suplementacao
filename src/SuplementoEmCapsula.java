@@ -15,7 +15,7 @@ public class SuplementoEmCapsula extends Suplemento {
             quantidadeDeCapsulas--; // reduz o numero de capsulas
 
             System.out.println("Cápsula de " + getNome() + " Consumida!");
-            System.out.println("Restam " + quantidadeDeCapsulas + " capsulas no pote. \n ");
+            System.out.println("Restam " + quantidadeDeCapsulas + " capsulas no pote.");
         } else {
             System.out.println("Não possui mais capsulas para serem consumidas!");
         }
