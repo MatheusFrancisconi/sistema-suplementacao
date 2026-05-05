@@ -29,7 +29,7 @@ public class Suplemento {
     }
 
     // MÉTODO (A ação que o suplemento pode sofrer)
-    public void consumirDose() {
+    public void consumir() {
         if (quantidadeEmGramas >= tamanhoDaDose) {
             quantidadeEmGramas = quantidadeEmGramas - tamanhoDaDose;
 

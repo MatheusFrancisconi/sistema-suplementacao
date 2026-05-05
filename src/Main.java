@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Iniciando o Sistema de Controle de Suplementação");
+        System.out.println("--- TESTANDO O SISTEMA DE SUPLEMENTOS ---\n");
 
-        // Criando o objeto passando tudo para o Construtor de uma vez!
+        // Criando o suplemento em pó
         Suplemento meuWhey = new Suplemento("Whey 80", "Black Skull", 900, 30);
+        System.out.println("Marca do Whey: " + meuWhey.getMarca() + "\n");
 
-        // O objeto já nasceu pronto e protegido. Agora é só usar!
-        System.out.println("nome do produto: " + meuWhey.getNome());
-        System.out.println("nome da marca: " + meuWhey.getMarca());
+        SuplementoEmCapsula minhaCreatina = new SuplementoEmCapsula("Creatina Creapure", "Growth Supplements", 120);
 
-        meuWhey.consumirDose();
-        meuWhey.consumirDose();
+        System.out.println("Marca da Creatina: " + minhaCreatina.getMarca() + "\n");
+
+        meuWhey.consumir();
+        minhaCreatina.consumir();
     }
 }
